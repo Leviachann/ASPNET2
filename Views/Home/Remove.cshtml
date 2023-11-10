@@ -1,0 +1,12 @@
+﻿@using Homework2.Models;
+@model Product
+
+<h2>Remove Product</h2>
+
+<p>Are you sure you want to remove this product?</p>
+
+<form asp-action="Remove" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Yes" />
+    <a asp-action="Index">No</a>
+</form>
